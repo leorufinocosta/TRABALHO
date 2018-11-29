@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 from Janela_Compras import Compras
 
-class Mobi(Toplevel):
+class Golf(Toplevel):
     def __init__(self, parent):
         # Chamar o init da classe mae
         super().__init__(parent)
@@ -10,19 +10,19 @@ class Mobi(Toplevel):
         self.title('DETALHES DA VENDA')
         self.transient(parent)
         self.grab_set()
-        self.text = Label(self, text="COR VEICULO: BRANCO")
+        self.text = Label(self, text="COR VEICULO: PRATEADO")
         self.text.pack()
-        self.text = Label(self, text="PORTAS: 2")
+        self.text = Label(self, text="PORTAS: 4")
         self.text.pack()
-        self.text = Label(self, text="ANO: 2018")
+        self.text = Label(self, text="ANO: 2017")
         self.text.pack()
-        self.text = Label(self, text="FABRICANTE: FIAT")
+        self.text = Label(self, text="FABRICANTE: VOLKSWAGEN")
         self.text.pack()
-        self.text = Label(self, text="MODELO: MOBI EASY")
+        self.text = Label(self, text="MODELO: GOLF COMFORTLINE")
         self.text.pack()
-        self.text = Label(self, text="PLACA: JKK-4787")
+        self.text = Label(self, text="PLACA: JUI-9630")
         self.text.pack()
-        self.text = Label(self, text="PREÇO: R$34.350")
+        self.text = Label(self, text="PREÇO: R$99.000 ")
         self.text.pack()
         self.bt_venda = Button(self, width=10, text='COMPRAR', command=self.compras)
         self.bt_venda.pack(pady=10)

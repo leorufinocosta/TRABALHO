@@ -3,3 +3,4 @@ class Controle():
     def __init__(self):
         self.jnl = Janela_Princ(self)
         self.jnl.mainloop()
+
