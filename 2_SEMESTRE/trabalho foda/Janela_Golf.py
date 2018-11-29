@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
-from Janela_Compras import Compras
+from Nota_Fiscal_Golf import Nota_Golf
 
 class Golf(Toplevel):
     def __init__(self, parent):
@@ -31,4 +31,4 @@ class Golf(Toplevel):
             super().destroy()
 
     def compras(self):
-        Compras(self)
+        Nota_Golf(self)

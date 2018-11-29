@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 
-class Nota_Uno(Toplevel):
+class Nota_Toro(Toplevel):
     def __init__(self, parent):
         super().__init__(parent)
         self.geometry('270x270+200+200')
@@ -47,13 +47,13 @@ class Nota_Uno(Toplevel):
         self.lb2 = Label(self, text=self.entra1.get()).pack()
         self.lb3 = Label(self, text=self.entra2.get()).pack()
         self.lb4 = Label(self, text=self.entra3.get()).pack()
-        self.lb5 = Label(self, text="COR VEICULO: PRETO\n "
+        self.lb5 = Label(self, text="COR VEICULO: VERMELHO\n "
                                     "PORTAS: 4\n "
-                                    "ANO: 2018\n "
+                                    "ANO: 2019\n "
                                     "FABRICANTE: FIAT\n "
-                                    "MODELO: UNO ATTRACTIVE\n "
-                                    "PLACA: JAP-8744\n "
-                                    "PREÇO: R$43.650\n").pack()
+                                    "MODELO: TORO FREEDOM\n "
+                                    "PLACA: JAS-1201\n "
+                                    "PREÇO: R$104.990\n").pack()
         self.lb6 = Label(self, text=self.entra5.get()).pack()
         self.lb7 = Label(self, text="Data da venda:").pack()
         self.lb8 = Label(self, text=self.entra4.get()).pack()
@@ -62,6 +62,8 @@ class Nota_Uno(Toplevel):
     def destroy(self):
             if messagebox.askokcancel('Confirmação', 'Deseja Sair?'):
                 super().destroy()
+
+
 
 
 

@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
-from Janela_Compras import Compras
+from Nota_Fiscal_Uno import Nota_Uno
 
 class Uno(Toplevel):
     def __init__(self, parent):
@@ -32,5 +32,5 @@ class Uno(Toplevel):
             super().destroy()
 
     def compras(self):
-        Compras(self)
+        Nota_Uno(self)
 

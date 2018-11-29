@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 
-class Nota_Uno(Toplevel):
+class Nota_Argo(Toplevel):
     def __init__(self, parent):
         super().__init__(parent)
         self.geometry('270x270+200+200')
@@ -51,9 +51,9 @@ class Nota_Uno(Toplevel):
                                     "PORTAS: 4\n "
                                     "ANO: 2018\n "
                                     "FABRICANTE: FIAT\n "
-                                    "MODELO: UNO ATTRACTIVE\n "
-                                    "PLACA: JAP-8744\n "
-                                    "PREÇO: R$43.650\n").pack()
+                                    "MODELO: ARGO PRECISION\n "
+                                    "PLACA: JFE-1002\n "
+                                    "PREÇO: R$50.640\n").pack()
         self.lb6 = Label(self, text=self.entra5.get()).pack()
         self.lb7 = Label(self, text="Data da venda:").pack()
         self.lb8 = Label(self, text=self.entra4.get()).pack()

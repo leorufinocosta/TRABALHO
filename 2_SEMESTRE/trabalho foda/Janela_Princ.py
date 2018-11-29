@@ -11,8 +11,8 @@ class Janela_Princ(Tk):
         #atributos
         self.controle = controle
         super().__init__()
-        self.geometry('300x300+200+200')
-        self.title('Concessionária')
+        self.geometry('400x400+200+200')
+        self.title('Concessionária Ferreira')
         self.config(bg='black')
 
         #Widgets na tela

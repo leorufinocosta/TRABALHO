@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
-from Janela_Compras import Compras
+from Nota_Fiscal_Argo import Nota_Argo
 
 class Argo(Toplevel):
     def __init__(self, parent):
@@ -31,4 +31,4 @@ class Argo(Toplevel):
             super().destroy()
 
     def compras(self):
-        Compras(self)
+        Nota_Argo(self)
