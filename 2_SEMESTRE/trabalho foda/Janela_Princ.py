@@ -32,18 +32,6 @@ class Janela_Princ(Tk):
                                                '1.8 FLEX AUTOMÁTICO\n', bg='white', command=self.carro_toro)
         self.bt5.pack(padx=0, pady=10)
 
-        self.menu = Menu(self)
-        #Criando um item de menu e subitens
-        self.menu_principal = Menu(self.menu, tearoff=0)
-        self.menu_principal.add_command(label='Compradores')
-        self.menu_principal.add_command(label='Vendas')
-        self.menu_principal.add_separator()
-        self.menu_principal.add_command(label='Sair', command=self.fechar)
-        self.menu.add_cascade(label='Consultar', menu=self.menu_principal)
-
-        #Mostrando o mnenu
-        self.config(menu=self.menu)
-
     def fechar(self):
         if messagebox.askokcancel('Confirmação', 'Deseja Sair?'):
             super().destroy()
